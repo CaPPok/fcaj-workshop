@@ -22,8 +22,9 @@ After reading the documentation and trying it out, I found that Resource Explore
 - Checking whether a resource has been deleted or still exists.
 - Supporting management when an account has multiple Regions or multiple projects.
 
-> [!NOTE]
-> This service is especially useful when you start having multiple environments like Development, Testing, and Production.
+{{% notice note %}}
+This service is especially useful when you start having multiple environments like Development, Testing, and Production.
+{{% /notice %}}
 
 ## Trying out AWS Resource Explorer
 
@@ -67,8 +68,9 @@ After trying it out, I noticed Resource Explorer has several advantages:
 - Can search using various different conditions.
 - Suitable as the number of resources increases.
 
-> [!TIP]
-> In my opinion, if you are just learning AWS, you might not clearly feel the benefits yet. But when deploying multiple projects or managing a shared AWS account for multiple teams, searching for resources will be much faster.
+{{% notice tip %}}
+In my opinion, if you are just learning AWS, you might not clearly feel the benefits yet. But when deploying multiple projects or managing a shared AWS account for multiple teams, searching for resources will be much faster.
+{{% /notice %}}
 
 ## Some points to note
 
@@ -76,8 +78,9 @@ Besides the advantages above, I also found a few things to keep in mind.
 
 First of all, Resource Explorer needs to have an Index created before use. If there is no Index, you cannot search for resources. Additionally, search results depend on the user's IAM permissions. If an IAM User or IAM Role does not have permission to view a certain resource, Resource Explorer will not display that resource either.
 
-> [!NOTE]
-> This is a tool to support searching and managing resources; it does not replace management or monitoring services like AWS Config or CloudWatch.
+{{% notice note %}}
+This is a tool to support searching and managing resources; it does not replace management or monitoring services like AWS Config or CloudWatch.
+{{% /notice %}}
 
 ## When to use it?
 
