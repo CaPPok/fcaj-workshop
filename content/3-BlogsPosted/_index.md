@@ -6,11 +6,12 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-> [!IMPORTANT]
-> Links to published articles on [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj):
-> 1. [Amazon Athena – Analyzing data on S3 using SQL without creating a Database](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2226781804753446/?rdid=EXSxKmYwwkha8Juz#)
-> 2. [AWS Fault Injection Service – Proactively injecting faults to test system stability](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2228379581260335/?rdid=FrDWafL5WaZdWwZt#)
-> 3. [Understanding AWS Resource Explorer – Searching AWS resources more easily](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2228859657878994/?rdid=b09FnLWnlkclpAuS#)
+{{% notice info %}}
+Links to published articles on [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj):
+1. [Amazon Athena – Analyzing data on S3 using SQL without creating a Database](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2226781804753446/?rdid=EXSxKmYwwkha8Juz#)
+2. [AWS Fault Injection Service – Proactively injecting faults to test system stability](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2228379581260335/?rdid=FrDWafL5WaZdWwZt#)
+3. [Understanding AWS Resource Explorer – Searching AWS resources more easily](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2228859657878994/?rdid=b09FnLWnlkclpAuS#)
+{{% /notice %}}
 
 ###  [BLOG 1 - AMAZON ATHENA - ANALYZING DATA ON S3 USING SQL WITHOUT CREATING A DATABASE](3.1-Blog1/)
 

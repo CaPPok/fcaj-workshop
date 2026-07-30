@@ -22,8 +22,9 @@ Sau khi tìm hiểu, mình thấy AWS FIS hỗ trợ nhiều loại thử nghi�
 - Thử nghiệm với Amazon ECS hoặc Amazon EKS.
 - Kiểm tra phản ứng của Auto Scaling khi một Instance gặp sự cố.
 
-> [!NOTE]
-> Thông qua các thử nghiệm này, nhóm phát triển có thể đánh giá xem hệ thống có tự phục hồi đúng như mong đợi hay không.
+{{% notice note %}}
+Thông qua các thử nghiệm này, nhóm phát triển có thể đánh giá xem hệ thống có tự phục hồi đúng như mong đợi hay không.
+{{% /notice %}}
 
 ## Fault Injection Experiment
 
@@ -39,8 +40,9 @@ Template sẽ mô tả toàn bộ thử nghiệm, bao gồm tài nguyên, hành 
 
 Ví dụ: Một EC2 Instance trong môi trường Development hoặc Testing.
 
-> [!TIP]
-> Theo mình, không nên thử nghiệm trực tiếp trên môi trường Production khi chưa đánh giá kỹ tác động.
+{{% notice tip %}}
+Theo mình, không nên thử nghiệm trực tiếp trên môi trường Production khi chưa đánh giá kỹ tác động.
+{{% /notice %}}
 
 **Bước 4:** Chọn hành động.
 
@@ -70,8 +72,9 @@ Sau khi tìm hiểu, mình thấy AWS FIS có một số ưu điểm như:
 - Không cần tự xây dựng các script để tạo lỗi.
 - Phù hợp để kiểm tra các cơ chế như Auto Scaling, Load Balancing hoặc Disaster Recovery.
 
-> [!NOTE]
-> Việc chủ động kiểm tra khả năng phục hồi sẽ giúp phát hiện các điểm yếu trước khi xảy ra sự cố thật.
+{{% notice note %}}
+Việc chủ động kiểm tra khả năng phục hồi sẽ giúp phát hiện các điểm yếu trước khi xảy ra sự cố thật.
+{{% /notice %}}
 
 ## Một số điểm cần lưu ý
 

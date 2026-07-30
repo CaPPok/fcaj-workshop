@@ -22,8 +22,9 @@ Sau khi tìm hiểu, mình thấy Athena phù hợp với khá nhiều trường
 - Hỗ trợ xây dựng Data Lake kết hợp với Amazon S3.
 - Làm nguồn dữ liệu cho Amazon QuickSight để trực quan hóa dữ liệu.
 
-> [!TIP]
-> Điểm mình thấy hay là chỉ cần dữ liệu nằm trên S3 là đã có thể sử dụng SQL để truy vấn mà không cần import vào database trước.
+{{% notice tip %}}
+Điểm mình thấy hay là chỉ cần dữ liệu nằm trên S3 là đã có thể sử dụng SQL để truy vấn mà không cần import vào database trước.
+{{% /notice %}}
 
 ## Truy vấn dữ liệu bằng Amazon Athena
 
@@ -59,8 +60,9 @@ FIELDS TERMINATED BY ','
 LOCATION 's3://your-bucket/students/';
 ```
 
-> [!NOTE]
-> Athena chỉ tạo metadata, dữ liệu vẫn nằm trên S3 và không bị sao chép sang nơi khác.
+{{% notice note %}}
+Athena chỉ tạo metadata, dữ liệu vẫn nằm trên S3 và không bị sao chép sang nơi khác.
+{{% /notice %}}
 
 **Bước 5:** Thực hiện truy vấn.
 
@@ -70,8 +72,9 @@ FROM students
 WHERE gpa >= 3.5;
 ```
 
-> [!NOTE]
-> Sau vài giây, kết quả sẽ hiển thị ngay trên giao diện Athena.
+{{% notice note %}}
+Sau vài giây, kết quả sẽ hiển thị ngay trên giao diện Athena.
+{{% /notice %}}
 
 ## Ưu điểm
 

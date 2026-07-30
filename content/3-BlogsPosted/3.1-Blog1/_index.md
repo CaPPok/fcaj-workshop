@@ -22,8 +22,9 @@ After researching, I found that Athena is suitable for quite a few scenarios, su
 - Supporting the building of a Data Lake in combination with Amazon S3.
 - Acting as a data source for Amazon QuickSight to visualize data.
 
-> [!TIP]
-> What I find interesting is that as long as the data is on S3, you can use SQL to query it without needing to import it into a database first.
+{{% notice tip %}}
+What I find interesting is that as long as the data is on S3, you can use SQL to query it without needing to import it into a database first.
+{{% /notice %}}
 
 ## Querying data with Amazon Athena
 
@@ -59,8 +60,9 @@ FIELDS TERMINATED BY ','
 LOCATION 's3://your-bucket/students/';
 ```
 
-> [!NOTE]
-> Athena only creates metadata; the data remains on S3 and is not copied elsewhere.
+{{% notice note %}}
+Athena only creates metadata; the data remains on S3 and is not copied elsewhere.
+{{% /notice %}}
 
 **Step 5:** Execute a query.
 
@@ -70,8 +72,9 @@ FROM students
 WHERE gpa >= 3.5;
 ```
 
-> [!NOTE]
-> After a few seconds, the results will be displayed directly on the Athena interface.
+{{% notice note %}}
+After a few seconds, the results will be displayed directly on the Athena interface.
+{{% /notice %}}
 
 ## Advantages
 

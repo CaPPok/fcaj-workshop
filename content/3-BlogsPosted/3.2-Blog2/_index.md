@@ -22,8 +22,9 @@ After researching, I found that AWS FIS supports various types of experiments, s
 - Experimenting with Amazon ECS or Amazon EKS.
 - Testing the reaction of Auto Scaling when an Instance encounters an issue.
 
-> [!NOTE]
-> Through these experiments, the development team can evaluate whether the system self-heals as expected.
+{{% notice note %}}
+Through these experiments, the development team can evaluate whether the system self-heals as expected.
+{{% /notice %}}
 
 ## Fault Injection Experiment
 
@@ -39,8 +40,9 @@ The Template will describe the entire experiment, including resources, actions, 
 
 For example: An EC2 Instance in the Development or Testing environment.
 
-> [!TIP]
-> In my opinion, you should not test directly on the Production environment without carefully evaluating the impact.
+{{% notice tip %}}
+In my opinion, you should not test directly on the Production environment without carefully evaluating the impact.
+{{% /notice %}}
 
 **Step 4:** Select actions.
 
@@ -70,8 +72,9 @@ After researching, I found that AWS FIS has some advantages such as:
 - No need to build custom scripts to inject faults.
 - Suitable for testing mechanisms like Auto Scaling, Load Balancing, or Disaster Recovery.
 
-> [!NOTE]
-> Proactively testing resilience will help uncover weaknesses before a real incident occurs.
+{{% notice note %}}
+Proactively testing resilience will help uncover weaknesses before a real incident occurs.
+{{% /notice %}}
 
 ## Some points to note
 

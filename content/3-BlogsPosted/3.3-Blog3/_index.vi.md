@@ -22,8 +22,9 @@ Sau khi đọc tài liệu và thử sử dụng, mình thấy Resource Explorer
 - Kiểm tra xem tài nguyên đã bị xóa hay vẫn còn tồn tại.
 - Hỗ trợ quản lý khi tài khoản có nhiều Region hoặc nhiều project.
 
-> [!NOTE]
-> Service này đặc biệt hữu ích khi bắt đầu có nhiều môi trường như Development, Testing và Production.
+{{% notice note %}}
+Service này đặc biệt hữu ích khi bắt đầu có nhiều môi trường như Development, Testing và Production.
+{{% /notice %}}
 
 ## Thử sử dụng AWS Resource Explorer
 
@@ -67,8 +68,9 @@ Sau khi sử dụng thử, mình thấy Resource Explorer có một số ưu đi
 - Có thể tìm kiếm bằng nhiều điều kiện khác nhau.
 - Phù hợp khi số lượng tài nguyên ngày càng nhiều.
 
-> [!TIP]
-> Theo mình, nếu đang học AWS thì có thể chưa cảm nhận rõ lợi ích. Nhưng khi triển khai nhiều project hoặc tham gia quản lý một tài khoản AWS dùng chung cho nhiều nhóm, việc tìm kiếm tài nguyên sẽ nhanh hơn rất nhiều.
+{{% notice tip %}}
+Theo mình, nếu đang học AWS thì có thể chưa cảm nhận rõ lợi ích. Nhưng khi triển khai nhiều project hoặc tham gia quản lý một tài khoản AWS dùng chung cho nhiều nhóm, việc tìm kiếm tài nguyên sẽ nhanh hơn rất nhiều.
+{{% /notice %}}
 
 ## Một số điểm cần lưu ý
 
@@ -76,8 +78,9 @@ Bên cạnh những ưu điểm trên, mình cũng thấy có một vài điều
 
 Trước hết, Resource Explorer cần được tạo Index trước khi sử dụng. Nếu chưa có Index thì sẽ không thể tìm kiếm tài nguyên. Ngoài ra, kết quả tìm kiếm còn phụ thuộc vào quyền IAM của người dùng. Nếu IAM User hoặc IAM Role không có quyền xem một tài nguyên nào đó thì Resource Explorer cũng sẽ không hiển thị tài nguyên đó.
 
-> [!NOTE]
-> Đây là công cụ hỗ trợ tìm kiếm và quản lý tài nguyên, không thay thế các dịch vụ quản trị hoặc giám sát như AWS Config hay CloudWatch.
+{{% notice note %}}
+Đây là công cụ hỗ trợ tìm kiếm và quản lý tài nguyên, không thay thế các dịch vụ quản trị hoặc giám sát như AWS Config hay CloudWatch.
+{{% /notice %}}
 
 ## Khi nào nên sử dụng?
 
