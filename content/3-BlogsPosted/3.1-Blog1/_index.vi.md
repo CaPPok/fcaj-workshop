@@ -108,9 +108,6 @@ Sau khi tìm hiểu, mình thấy Amazon Athena là một service khá tiện l�
 
 ## Tài liệu tham khảo
 1. [AWS Documentation – Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html)
-
 2. [Getting Started with Amazon Athena](https://docs.aws.amazon.com/.../ug/getting-started.html)
-
 3. [Amazon Athena User Guide](https://docs.aws.amazon.com/athena/latest/ug/)
-
 4. [Amazon Athena Pricing](https://aws.amazon.com/athena/pricing/)
