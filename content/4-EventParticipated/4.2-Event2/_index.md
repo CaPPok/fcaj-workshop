@@ -41,7 +41,7 @@ The speakers at the event included:
 
 #### SLA and Monitoring
 
-- **Overview of SLA and Risk Management:** SLA (Service Level Agreement) is a formal service agreement between a provider and a customer, playing a core role in establishing clear expectations, service accountability, risk management, and performance measurement. Monitoring sits within the risk management process to detect service risks early before they impact the SLA or generate customer complaints, revolving around the loop: Identify risk $\rightarrow$ Monitor signals $\rightarrow$ Respond $\rightarrow$ Improve.
+- **Overview of SLA and Risk Management:** SLA (Service Level Agreement) is a formal service agreement between a provider and a customer, playing a core role in establishing clear expectations, service accountability, risk management, and performance measurement. Monitoring sits within the risk management process to detect service risks early before they impact the SLA or generate customer complaints, revolving around the loop: Identify risk -> Monitor signals -> Respond -> Improve.
 - **The Gap Between "Healthy Infrastructure" and "User Experience":** A major trap in monitoring is the notion that "healthy infrastructure equals happy users", while in reality, individual hardware metrics cannot tell the whole story. Therefore, systems need monitoring across a multi-tier architectural stack to clearly understand what users are actually doing rather than just looking at the servers.
 - **Automated Alerting Flow and Real-world Lessons:** The flow from custom metrics via **CloudWatch Alarm**, fan-out through SNS Topics to notification channels like Email/Slack helps the technical team react promptly before receiving complaints.
 

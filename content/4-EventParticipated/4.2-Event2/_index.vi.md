@@ -1,9 +1,9 @@
 ---
-title: "Event 1"
+title: "Event 2"
 date: 2026-7-30
 weight: 1
 chapter: false
-pre: " <b> 4.1. </b> "
+pre: " <b> 4.2. </b> "
 ---
 
 # Bài thu hoạch “Event Day - 11/07/2026”
@@ -41,7 +41,7 @@ Danh sách diễn giả trong sự kiện bao gồm :
 
 #### SLA and Monitoring
 
-- **Tổng quan về SLA và Quản lý rủi ro:** SLA - Service Level Agreement là cam kết dịch vụ chính thức giữa nhà cung cấp và khách hàng, đóng vai trò cốt lõi trong việc tạo lập kỳ vọng rõ ràng, trách nhiệm giải trình, quản lý rủi ro và đo lường hiệu suất. Giám sát nằm trong quy trình quản lý rủi ro nhằm phát hiện sớm các sự cố trước khi chúng tác động đến SLA hay tạo ra phàn nàn từ khách hàng, xoay quanh vòng lặp: Nhận diện rủi ro $\rightarrow$ Giám sát tín hiệu $\rightarrow$ Phản hồi $\rightarrow$ Cải thiện.
+- **Tổng quan về SLA và Quản lý rủi ro:** SLA - Service Level Agreement là cam kết dịch vụ chính thức giữa nhà cung cấp và khách hàng, đóng vai trò cốt lõi trong việc tạo lập kỳ vọng rõ ràng, trách nhiệm giải trình, quản lý rủi ro và đo lường hiệu suất. Giám sát nằm trong quy trình quản lý rủi ro nhằm phát hiện sớm các sự cố trước khi chúng tác động đến SLA hay tạo ra phàn nàn từ khách hàng, xoay quanh vòng lặp: Nhận diện rủi ro -> Giám sát tín hiệu -> Phản hồi -> Cải thiện.
 - **Khoảng cách giữa "Hạ tầng khỏe mạnh" và "Trải nghiệm người dùng":** Một cạm bẫy lớn trong giám sát là quan niệm "hạ tầng khỏe mạnh đồng nghĩa với người dùng hạnh phúc", trong khi thực tế các chỉ số phần cứng riêng lẻ không thể kể hết toàn bộ câu chuyện. Do đó, hệ thống cần giám sát từ tháp cấu trúc nhiều tầng để hiểu rõ thực tế người dùng đang làm gì thay vì chỉ nhìn vào các server.
 - **Luồng cảnh báo tự động và bài học thực tế:** Dòng chảy từ chỉ số tùy chỉnh qua **CloudWatch Alarm**, phát tán qua SNS Topic đến các kênh thông báo như Email/Slack giúp đội ngũ kỹ thuật phản ứng kịp thời trước khi nhận khiếu nại.
 
