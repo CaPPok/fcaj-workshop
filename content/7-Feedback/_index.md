@@ -1,47 +1,42 @@
 ---
 title: "Sharing and Feedback"
-date: 2024-01-01
+date: 2026-07-30
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+> Below are my personal sharing and feedback regarding my experiences participating in the First Cloud AI Journey program. I hope they can help the FCAJ team continue to improve and develop the program even better in the future:
 
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud AI Journey program. This will help the FCAJ team improve any shortcomings based on the following aspects:
+### General Evaluation
 
-### Overall Evaluation
+**1. Workspace and working environment**  
+The environment at FCAJ carries the strong signature of a dynamic tech team. The comfortable workspace makes it easy for me to maintain focus when diving deep into complex AWS documentation. In particular, the open culture makes technical discussions very natural; senior colleagues are always willing to help me debug tricky issues even after working hours. However, because the project has multiple sub-teams (AI, Backend, Frontend), I expect there to be more cross-sharing sessions or bonding activities so that departments can better understand each other's workflows.
 
-**1. Working Environment**  
-The working environment is very friendly and open. FCAJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+**2. Role of Mentors and Team Admins**  
+Mentors and Team Admins are always highly active in the common group. They are always ready to promptly support questions and provide directions for problem-solving. In addition, the events organized by the seniors are professional with well-prepared topics, giving me the opportunity to learn and expand my knowledge. Furthermore, the seniors also carefully remind us of the rules and regulations when working at the office.
 
-**2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+**3. Ability to apply specialized knowledge**  
+The Recommendation System project is a great practical test for the Machine Learning knowledge I accumulated at university. But the most core value that the internship brings is bridging the gap in Cloud Computing and MLOps. Thanks to FCAJ, I realized that a good AI model lies not only in algorithmic accuracy but also in how it is deployed, monitored, and operated in a production environment.
 
-**3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
+**4. Skill upgrading journey**  
+In just 8 short weeks, I have gotten acquainted with and directly operated an ecosystem of Amazon services such as SageMaker, S3, and DynamoDB. Not stopping at hard skills, I learned how to work in a standard Agile process. Through the events, I realized the need to expand my soft skills and mindset further.
 
-**4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
+**5. Collaboration culture and team spirit**  
+At FCAJ, I feel that all feedback and contributions from interns are seriously listened to. Team spirit is most evident in the final weeks of the project: the whole team, regardless of position, stayed up late together calling APIs and reviewing logs to ensure the movie recommendation flow successfully integrates into the web. Especially the way the mentors participated in external competitions like the AI Agent Build Week Hackathon, and how they shared their experiences and teamwork.
 
-**5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
+### Other Questions
 
-**6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
+* **What were you most satisfied with during the internship?**  
+  What makes me proud and satisfied the most is being able to personally deploy a Machine Learning model from a local environment to run practically on cloud infrastructure. Seeing the web system call the API and return movie recommendation results effectively.
 
----
-
-### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
-
----
+* **What do you think the company needs to improve for future interns?**  
+  It would be great if the program had an additional document or a brief orientation session right from the first week on basic cloud resource cost management, helping interns feel more confident when provisioning services without fear of exceeding the allocated budget.
 
 ### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+
+* **Do you have any suggestions to improve the internship experience?**  
+  I suggest increasing the opportunities to go to the office to better adapt to the work schedule and environment. At the same time, this helps train the ability to focus on work.
+
+* **Other feedback:**  
+  I would like to send my sincere thanks to the First Cloud AI Journey organizing committee, the mentors, and all colleagues who accompanied, supported, and created an incredibly memorable internship!
