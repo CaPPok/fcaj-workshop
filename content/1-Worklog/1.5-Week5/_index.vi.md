@@ -1,59 +1,29 @@
 ---
 title: "Worklog Tuần 5"
-date: 2024-01-01
-weight: 1
+date: 2026-07-30
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Xây dựng thuật toán lai kết hợp các mô hình để khắc phục các nhược điểm đơn lẻ.
+- Thiết lập cơ chế kiểm định chất lượng tự động thông qua Promotion Gate.
+- Đánh giá hiệu suất mô hình bằng các chỉ số định lượng chuyên sâu.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Nghiên cứu phương pháp kết hợp kết quả gợi ý giữa mô hình Collaborative Filtering và các mô hình thành phần khác. <br> - Xây dựng thuật toán lai sử dụng phương pháp Weighted Reciprocal Rank Fusion. | 06/07/2026 | 06/07/2026 | <https://www.paradedb.com/learn/search-concepts/reciprocal-rank-fusion>, <https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking> |
+| 3 | - Tích hợp thuật toán lai vào hệ thống để xử lý các trường hợp thiếu dữ liệu lịch sử. <br> - Kiểm tra khả năng mở rộng không gian gợi ý và đa dạng hóa danh mục phim. | 07/07/2026 | 07/07/2026 |  |
+| 4 | - Phát triển script đánh giá mô hình. <br> - So sánh hiệu suất giữa mô hình lai và mô hình cơ sở phổ biến. | 08/07/2026 | 08/07/2026 |  |
+| 5 | - Xây dựng cơ chế Promotion Gate để tự động kiểm duyệt phiên bản mô hình mới. <br> - Lập quy tắc kiểm tra số lượng người dùng được đánh giá. | 09/07/2026 | 09/07/2026 |  |
+| 6 | - Kiểm tra toàn bộ quy trình tự động hóa cập nhật mô hình trên môi trường thử nghiệm. <br> - Tổng hợp các báo cáo hiện thực và đánh giá mô hình. | 10/07/2026 | 10/07/2026 |  |
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Hoàn thiện thuật toán lai:** Xây dựng thành công phương pháp kết hợp giúp giải quyết triệt để sự cố thiếu dữ liệu lịch sử của người dùng mới, đồng thời nâng cao độ chính xác và đa dạng hóa danh mục gợi ý.
+* **Đánh giá định lượng hiệu quả:** Thiết lập thành công các chỉ số đo lường hiệu suất, chứng minh mô hình lai đạt được độ chính xác cao và vượt trội hơn so với mô hình cơ sở.
+* **Tự động hóa kiểm định:** Xây dựng cơ chế Promotion Gate giúp hệ thống chỉ chấp nhận đưa vào sử dụng các phiên bản mô hình mới khi vượt qua các ngưỡng tiêu chuẩn về chất lượng.

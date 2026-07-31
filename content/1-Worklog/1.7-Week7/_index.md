@@ -1,57 +1,30 @@
 ---
 title: "Week 7 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-07-30
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Review and master operations of core services including Amazon SageMaker, Amazon S3, SageMaker Processing Jobs, and SageMaker Endpoints.
+- Deploy the model to the cloud for training, retraining, and artifact storage.
+- Integrate the recommendation model with the interface and backend systems managed by other team members for comprehensive testing.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | - Conduct a full review of Amazon SageMaker architecture and data file storage mechanisms on Amazon S3. <br> - Recheck the data flow from storage to the model training environment. | 20/07/2026 | 20/07/2026 |  |
+| 3 | - Deep dive into SageMaker Processing Jobs to set up automated batch data-processing tasks. <br> - Configure SageMaker Endpoints to prepare real-time inference API serving. | 21/07/2026 | 21/07/2026 | |
+| 4 | - Deploy model training and retraining source code to the cloud environment using prepared services. <br> - Set up automatic storage of model artifacts to Amazon S3 after each training run. | 22/07/2026 | 22/07/2026 |  |
+| 5 | - Collaborate with team members to connect the Machine Learning layer with the Backend and Frontend systems of the movie website. <br> - Validate the API request flow for fetching movie recommendations from the user interface. | 23/07/2026 | 23/07/2026 |  |
+| 6 | - Perform comprehensive end-to-end testing of the entire cloud system. <br> - Record data transmission issues and optimize model response latency. | 24/07/2026 | 24/07/2026 | Integrated testing system |
 
 ### Week 7 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Mastered deployment infrastructure:** Successfully reviewed and applied Amazon S3, SageMaker Processing Jobs, and SageMaker Endpoints for cloud model operations.
+* **Automated training and storage:** Fully established workflows for training, retraining, and secure model-result storage on AWS.
+* **Successful system integration:** Collaborated effectively with the web development team to integrate the recommendation model into the movie website, ensuring users receive recommendation results directly in the interface.
+* Completed the end-to-end system integration phase, ready for load testing and fault simulation in the final week.

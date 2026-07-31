@@ -1,57 +1,34 @@
 ---
 title: "Week 3 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-07-30
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 3 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Review AWS service knowledge.
+- Practice through AWS Cloud Quest.
+- Learn basic recommendation algorithms and models to prepare for the project.
+- Hold a team meeting to align the project source code structure.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | - Review previously learned services. <br> - Log in and start AWS Cloud Quest to reinforce knowledge through simulated practice. | 22/06/2026 | 23/06/2026 | AWS Skill Builder / Cloud Quest |
+| 3 | - Continue completing infrastructure problem-solving challenges in AWS Cloud Quest. | 23/06/2026 | 23/06/2026 | AWS Skill Builder |
+| 4 | - Learn the **Popularity-based** recommendation algorithm. <br> - Learn **Content-Based Filtering** using TF-IDF and Cosine Similarity. | 24/06/2026 | 25/06/2026 | <https://machinelearningcoban.com/>, <https://developers.google.com/machine-learning/recommendation/> |
+| 5 | - Research implementation approaches for the model. | 25/06/2026 | 25/06/2026 | <https://machinelearningcoban.com/>, <https://developers.google.com/machine-learning/recommendation/> |
+| 6 | - **Team meeting:** Align workflow and source code structure. <br> - Finalize component separation strategy: Frontend, Backend, and Machine Learning. | 26/06/2026 | 26/06/2026 | Team meeting minutes |
 
 ### Week 3 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Strengthened Cloud skills:** Through AWS Cloud Quest, dry Cloud theory was transformed into practical problem-solving skills, increasing confidence in working on AWS.
+* **Built algorithm foundations:**
+  * Understood how the **Popularity** algorithm works and identified it as a suitable solution for guest users without accounts.
+  * Understood how the **Content-Based Filtering** model works and identified a plan to combine it with preferred-genre onboarding to solve recommendations for new users.
+* **Project organization:**
+  * Successfully aligned source code architecture with the team.
+  * Prepared the environment and raw dataset for the next phases.

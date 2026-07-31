@@ -1,30 +1,35 @@
 ---
 title: "Internship Report"
-date: 2026-07-30
+date: 2024-01-01
 weight: 1
 chapter: false
 ---
 
     
 # Internship Report
+
+{{% notice warning %}}
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+{{% /notice %}}
+
 ### Student Information:
-&emsp; **Full Name:** Banh Phu Hoi
+&emsp; **Full Name:** Nguyen Van A
 
-&emsp; **Phone Number:** 0856293712
+&emsp; **Phone Number:** 0989888999 
 
-&emsp; **Email:** banhphuhoi@gmail.com
+&emsp; **Email:** Anguyenvan@gmail.com
 
-&emsp; **University:** Ho Chi Minh City University of Technology - VNU-HCM
+&emsp; **University:** Ho Chi Minh City University of Technology and Education
 
-&emsp; **Major:** Computer Science
+&emsp; **Major:** Information Technology
 
-&emsp; **Class:** MT23KHM7
+&emsp; **Class:** AWS082025
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
 &emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Internship Duration:** From 14/06/2026 to 14/08/2026
+&emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
 
 ![Your profile picture](/images/avatar.png)
 
@@ -37,3 +42,4 @@ chapter: false
 5.  [Workshop](5-Workshop/)
 6.  [Self-evaluation](6-Self-evaluation/)
 7.  [Sharing and Feedback](7-Feedback/)
+8.  [References](8-References/)

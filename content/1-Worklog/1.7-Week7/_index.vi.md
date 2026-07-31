@@ -1,59 +1,30 @@
 ---
 title: "Worklog Tuần 7"
-date: 2024-01-01
-weight: 1
+date: 2026-07-30
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Ôn tập và nắm vững cách vận hành các dịch vụ cốt lõi gồm Amazon SageMaker, Amazon S3, SageMaker Processing Jobs và SageMaker Endpoints.
+- Triển khai mô hình lên môi trường đám mây phục vụ việc huấn luyện, tái huấn luyện và lưu trữ artifact.
+- Tích hợp mô hình gợi ý với hệ thống giao diện và máy chủ backend do các thành viên khác trong nhóm phụ trách để kiểm thử toàn diện.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Ôn tập toàn diện kiến trúc Amazon SageMaker và cơ chế lưu trữ tệp dữ liệu trên Amazon S3. <br> - Rà soát lại luồng truyền dữ liệu từ kho lưu trữ đến môi trường huấn luyện mô hình. | 20/07/2026 | 20/07/2026 |  |
+| 3 | - Nghiên cứu sâu về SageMaker Processing Jobs để thiết lập các tác vụ xử lý dữ liệu hàng loạt tự động. <br> - Cấu hình SageMaker Endpoints để chuẩn bị cho việc cung cấp API suy luận thời gian thực. | 21/07/2026 | 21/07/2026 | |
+| 4 | - Đưa mã nguồn huấn luyện và tái huấn luyện mô hình lên môi trường đám mây sử dụng các dịch vụ đã chuẩn bị. <br> - Thiết lập cơ chế tự động lưu trữ các artifact mô hình sau mỗi lần huấn luyện vào Amazon S3. | 22/07/2026 | 22/07/2026 |  |
+| 5 | - Phối hợp với các thành viên trong nhóm để kết nối tầng Machine Learning với hệ thống Backend và Frontend của trang web xem phim. <br> - Kiểm tra luồng gọi API lấy danh sách phim gợi ý từ giao diện người dùng. | 23/07/2026 | 23/07/2026 |  |
+| 6 | - Thực hiện kiểm thử toàn diện toàn bộ hệ thống từ đầu cuối đến đầu cuối trên môi trường đám mây. <br> - Ghi nhận các lỗi phát sinh trong quá trình truyền tải dữ liệu và tối ưu hóa độ trễ phản hồi của mô hình. | 24/07/2026 | 24/07/2026 | Hệ thống kiểm thử tích hợp |
 
 ### Kết quả đạt được tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Làm chủ hạ tầng triển khai:** Ôn tập và ứng dụng thành công các công cụ Amazon S3, SageMaker Processing Jobs cùng SageMaker Endpoints vào việc vận hành mô hình trên đám mây.
+* **Tự động hóa huấn luyện và lưu trữ:** Thiết lập hoàn chỉnh quy trình huấn luyện, tái huấn luyện và lưu trữ kết quả mô hình an toàn trên nền tảng AWS.
+* **Tích hợp hệ thống thành công:** Phối hợp nhịp nhàng với đội ngũ phát triển web để kết nối mô hình gợi ý vào website xem phim, đảm bảo người dùng nhận được kết quả đề xuất trực quan ngay trên giao diện.
+* Hoàn thành giai đoạn tích hợp hệ thống end-to-end, sẵn sàng cho việc kiểm tra khả năng chịu tải và giả lập sự cố ở tuần cuối cùng.

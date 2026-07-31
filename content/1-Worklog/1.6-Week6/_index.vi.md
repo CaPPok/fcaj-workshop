@@ -1,58 +1,30 @@
 ---
 title: "Worklog Tuần 6"
-date: 2024-01-01
-weight: 1
+date: 2026-07-30
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Kiểm tra toàn diện đầu ra và kết quả thực tế của mô hình gợi ý.
+- Khám phá và ứng dụng dịch vụ AWS Resource Explorer để tối ưu hóa việc quản lý tài nguyên đám mây.
+- Học tập nâng cao về các dịch vụ AWS chuyên sâu phục vụ cho việc vận hành hệ thống.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Kiểm tra kỹ lưỡng các tệp đầu ra và định dạng kết quả gợi ý từ mô hình. <br> - Rà soát tính chính xác của các danh sách phim được đề xuất cho người dùng mẫu. | 13/07/2026 | 13/07/2026 | |
+| 3 | - Phân tích hiệu suất thực tế của mô hình qua các kịch bản kiểm thử khác nhau. <br> - Tinh chỉnh các tham số đầu ra để đảm bảo chất lượng gợi ý đạt yêu cầu trước khi đưa lên đám mây. | 14/07/2026 | 14/07/2026 |  |
+| 4 | - Tìm hiểu dịch vụ AWS Resource Explorer để giải quyết bài toán quản lý tài nguyên quy mô lớn. <br> - Thử nghiệm tính năng lập chỉ mục tài nguyên và tìm kiếm tập trung trên toàn bộ các Region khác nhau. | 15/07/2026 | 15/07/2026 | <https://docs.aws.amazon.com/resource-explorer/latest/userguide/welcome.html> |
+| 5 | - Học tập chuyên sâu nâng cao về các dịch vụ AWS quan trọng khác trong hệ sinh thái. <br> - Nghiên cứu các phương án tối ưu hóa hiệu năng và bảo mật cho kiến trúc hệ thống. | 16/07/2026 | 17/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Tiếp tục nghiên cứu mở rộng nâng cao các dịch vụ AWS. <br> - Thực hành bài lab | 17/07/2026 | 17/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Kiểm định mô hình chặt chẽ:** Hoàn thành việc rà soát đầu ra, đảm bảo các danh sách gợi ý phim có độ chính xác cao, logic và sẵn sàng phục vụ các tầng ứng dụng phía trên.
+* **Biết các công cụ quản lý tài nguyên:** 
+  * Nắm được cách sử dụng AWS Resource Explorer để tìm kiếm nhanh chóng các tài nguyên như máy chủ ảo hoặc hàm xử lý mà không cần mất công kiểm tra từng vùng quản lý riêng lẻ.
+  * Hiểu cơ bản về cơ chế lập chỉ mục giúp tối ưu hóa thời gian vận hành và giám sát hệ thống đám mây phức tạp.

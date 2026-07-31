@@ -1,39 +1,25 @@
 ---
-title: "Worklog"
-date: 2024-01-01
+title: "Work Log"
+date: 2026-07-30
 weight: 1
 chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+The work log was carried out throughout the internship period with weekly content as follows:
 
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
+**Week 1:** [Getting familiar with AWS and learning the basic services](1.1-week1/)
 
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+**Week 2:** [Exploring the AI/ML ecosystem on AWS and the MLOps operational workflow](1.2-week2/)
 
-**Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
+**Week 3:** [Practicing Cloud Quest, learning basic recommendation algorithms, and standardizing the source code structure](1.3-week3/)
 
-**Week 2:** [Doing task A...](1.2-week2/)
+**Week 4:** [Implementing the core Collaborative Filtering model and conducting experimental training](1.4-week4/)
 
-**Week 3:** [Doing task B...](1.3-week3/)
+**Week 5:** [Building a hybrid algorithm and setting up the automated quality validation mechanism Promotion Gate](1.5-week5/)
 
-**Week 4:** [Doing task C...](1.4-week4/)
+**Week 6:** [Reviewing model results and learning the AWS Resource Explorer service for resource management](1.6-week6/)
 
-**Week 5:** [Doing task D...](1.5-week5/)
+**Week 7:** [Deploying the model to the cloud and integrating it with the movie web system](1.7-week7/)
 
-**Week 6:** [Doing task E...](1.6-week6/)
-
-**Week 7:** [Doing task G...](1.7-week7/)
-
-**Week 8:** [Doing task H...](1.8-week8/)
-
-**Week 9:** [Doing task I...](1.9-week9/)
-
-**Week 10:** [Doing task L...](1.10-week10/)
-
-**Week 11:** [Doing task M...](1.11-week11/)
-
-**Week 12:** [Doing task N...](1.12-week12/)
+**Week 8:** [Evaluating reliability with AWS Fault Injection Service, testing, and finalizing the report](1.8-week8/)

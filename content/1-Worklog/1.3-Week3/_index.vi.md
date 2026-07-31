@@ -1,59 +1,34 @@
 ---
 title: "Worklog Tuần 3"
-date: 2024-01-01
-weight: 1
+date: 2026-07-30
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Ôn lại kiến thức về các dịch vụ AWS.
+- Thực hành thông qua AWS Cloud Quest.
+- Tìm hiểu về các thuật toán, mô hình gợi ý cơ bản để chuẩn bị cho dự án.
+- Họp nhóm để thống nhất cấu trúc source code của dự án.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Ôn tập lại các dịch vụ đã học. <br> - Đăng nhập và bắt đầu trải nghiệm AWS Cloud Quest để củng cố kiến thức qua thực hành giả lập. | 22/06/2026 | 23/06/2026 | AWS Skill Builder / Cloud Quest |
+| 3 | - Tiếp tục hoàn thành các thử thách giải quyết vấn đề hạ tầng trên AWS Cloud Quest. | 23/06/2026 | 23/06/2026 | AWS Skill Builder |
+| 4 | - Tìm hiểu về thuật toán **Popularity-based** gợi ý dựa trên độ phổ biến. <br> - Tìm hiểu về **Content-Based Filtering** - Gợi ý dựa trên nội dung, sử dụng TF-IDF và Cosine Similarity. | 24/06/2026 | 25/06/2026 | <https://machinelearningcoban.com/>, <https://developers.google.com/machine-learning/recommendation/> |
+| 5 | - Nghiên cứu về cách hiện thực mô hình. | 25/06/2026 | 25/06/2026 | <https://machinelearningcoban.com/>, <https://developers.google.com/machine-learning/recommendation/> |
+| 6 | - **Họp nhóm:** Thống nhất quy trình làm việc và cấu trúc mã nguồn. <br> - Chốt phương án phân tách các thành phần: Frontend, Backend, và Machine Learning. | 26/06/2026 | 26/06/2026 | Biên bản họp nhóm |
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Củng cố kỹ năng Cloud:** Thông qua AWS Cloud Quest, những lý thuyết khô khan về Cloud đã được chuyển hóa thành các kỹ năng xử lý tình huống thực tế, giúp em tự tin hơn khi thao tác trên môi trường AWS.
+* **Xây dựng nền tảng thuật toán:** 
+  * Nắm được cơ chế hoạt động của thuật toán **Popularity**. Nhận định rõ đây sẽ là giải pháp dành cho những người dùng khách chưa có tài khoản.
+  * Hiểu cách mô hình **Content-Based Filtering** hoạt động. Xác định được phương án dùng mô hình này kết hợp với bước khảo sát chọn thể loại yêu thích để giải quyết bài toán gợi ý cho người dùng mới.
+* **Tổ chức dự án:**
+  * Thống nhất thành công kiến trúc source code với team.
+  * Đã chuẩn bị sẵn sàng môi trường và bộ dữ liệu thô.

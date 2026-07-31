@@ -20,7 +20,7 @@ pre: " <b> 1.1. </b> "
 | 2 | - Làm quen team FCAJ, đọc nội quy văn phòng. <br> - Tạo tài khoản AWS Free Tier. <br> - Cài đặt, cấu hình và làm quen với thao tác trên AWS Management Console & AWS CLI. | 08/06/2026 | 08/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 3 | - Tìm hiểu AWS IAM (Identity and Access Management): User, Group, Role, Policy. <br> - Tìm hiểu Amazon S3: Bucket, Object, các khái niệm lưu trữ cơ bản. <br> - **Thực hành:** Khởi tạo user/policy trên IAM và tạo S3 Bucket đầu tiên. | 09/06/2026 | 09/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 4 | - Tìm hiểu Amazon EC2: Instance types, AMI, cơ chế bảo mật (Security Groups), EBS. <br> - **Thực hành:** Tạo EC2 instance, thiết lập Key Pair và kết nối thành công qua SSH. | 10/06/2026 | 10/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 5 | - Nghiên cứu Amazon DynamoDB (NoSQL Database). <br> - Tìm hiểu cơ chế Partition Key, Sort Key, và Schema-less design để chuẩn bị cho việc lưu trữ metadata phim. | 11/06/2026 | 11/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Nghiên cứu Amazon DynamoDB. <br> - Tìm hiểu cơ chế Partition Key, Sort Key, và Schema-less design để chuẩn bị cho việc lưu trữ metadata phim. | 11/06/2026 | 11/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 6 | - Tìm hiểu về Amazon Athena. <br> - Viết Blog Post tổng kết kiến thức tuần 1, chia sẻ về cách truy vấn dữ liệu serverless không cần dựng Database truyền thống. | 12/06/2026 | 12/06/2026 | <https://docs.aws.amazon.com/athena/latest/ug/what-is.html> |
 
 ### Kết quả đạt được tuần 1:
@@ -30,8 +30,7 @@ pre: " <b> 1.1. </b> "
 * **Kiến thức hạ tầng cốt lõi:**
   * Hiểu và vận dụng cơ chế phân quyền bảo mật (IAM) theo nguyên tắc đặc quyền tối thiểu.
   * Khởi tạo và kết nối SSH thành công máy chủ ảo EC2.
-  * Hiểu cơ chế lưu trữ hướng đối tượng của Amazon S3 (tiền đề để lưu trữ dataset sau này) và cơ sở dữ liệu NoSQL với Amazon DynamoDB.
+  * Hiểu cơ chế lưu trữ hướng đối tượng của Amazon S3 và cơ sở dữ liệu NoSQL với Amazon DynamoDB.
 * **Mở rộng tư duy với Amazon Athena:** 
-  * Quá trình học giúp mình phá vỡ lối mòn tư duy: "Muốn truy vấn dữ liệu thì bắt buộc phải cài đặt một hệ quản trị CSDL như MySQL hay PostgreSQL". 
   * Nắm được bản chất của Amazon Athena: Là một dịch vụ serverless mạnh mẽ cho phép truy vấn trực tiếp dữ liệu lưu trên S3 bằng cú pháp SQL chuẩn.
-  * Nhận thấy ưu điểm tuyệt đối trong việc giảm tải quản lý hạ tầng: Không cần tạo máy chủ, tương thích tốt với nhiều định dạng dữ liệu (CSV, JSON, Parquet, ORC, Avro), rất hữu ích cho quá trình phân tích dữ liệu huấn luyện ML sau này.
+  * Nhận thấy ưu điểm tuyệt đối trong việc giảm tải quản lý hạ tầng: Không cần tạo máy chủ, tương thích tốt với nhiều định dạng dữ liệu, rất hữu ích cho quá trình phân tích dữ liệu huấn luyện mô hình Machine Learning.
