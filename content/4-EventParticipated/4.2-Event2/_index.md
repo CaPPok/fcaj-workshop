@@ -1,126 +1,79 @@
 ---
 title: "Event 2"
-date: 2024-01-01
-weight: 1
+date: 2026-7-30
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Field Report: "Event Day - 11/07/2026"
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+This was the weekly networking and exchange event of the FCAJ program, taking place every Saturday. This was also the second event I have attended since joining FCAJ.
 
-### Speakers
+- The final round of the **Cloud Architect** competition.
+- Sharing of AWS services.
+- Methods for deploying and evaluating real-time projects.
+- Introduction to the **AWS Cloud Practitioner** certification.
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+### List of Speakers
+
+The speakers at the event included:
+
+- **Mr. Thinh**, currently DevOps/DevSecOps/Cloud Engineer - Styl Solutions - First Cloud AI Journey, sharing about **Securing Your Web Apps With AWS Security Agent**.
+- **Mr. Nguyen Huynh Son** sharing about **SLA and Monitoring**.
+- **Mr. Ngo Le Tan Huy** introducing **AWS Cloud Practitioner**.
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Cloud Architect Competition
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- Organization of the final round of the **Cloud Architect** competition.
+- Reviewing a set of questions regarding AWS services.
+- Solving practical situational questions when deploying to the Cloud.
 
-#### Transitioning to modern application architecture – Microservices
+#### Securing Your Web Apps With AWS Security Agent
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- **Security Overview:** Traditional security testing methods often face major hurdles such as time-consuming manual processes taking weeks, high specialized expert costs, and inconsistent coverage depending on the tester's skills.
+- **AI Agent Solution:** Powered by Amazon Bedrock, this autonomous agent has the capability to plan and execute security tasks without human intervention. This tool covers the entire development lifecycle from design review, code security to active penetration testing, while outperforming standard LLM chatbots through vulnerability verification via real exploitation actions.
+- **Critical Limitations:** The agent still encounters bottlenecks such as authentication barriers, difficulties in detecting logic flaws and business logic fraud without deep context, and rapid task-hour accumulation for complex applications that require close monitoring.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### SLA and Monitoring
 
-#### Domain-Driven Design (DDD)
+- **Overview of SLA and Risk Management:** SLA (Service Level Agreement) is a formal service agreement between a provider and a customer, playing a core role in establishing clear expectations, service accountability, risk management, and performance measurement. Monitoring sits within the risk management process to detect service risks early before they impact the SLA or generate customer complaints, revolving around the loop: Identify risk $\rightarrow$ Monitor signals $\rightarrow$ Respond $\rightarrow$ Improve.
+- **The Gap Between "Healthy Infrastructure" and "User Experience":** A major trap in monitoring is the notion that "healthy infrastructure equals happy users", while in reality, individual hardware metrics cannot tell the whole story. Therefore, systems need monitoring across a multi-tier architectural stack to clearly understand what users are actually doing rather than just looking at the servers.
+- **Automated Alerting Flow and Real-world Lessons:** The flow from custom metrics via **CloudWatch Alarm**, fan-out through SNS Topics to notification channels like Email/Slack helps the technical team react promptly before receiving complaints.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### Inside The Exam: AWS Cloud Practitioner
 
-#### Event-Driven Architecture
+- Introduction to obtaining the **AWS Cloud Practitioner** certification.
+- Discussion on the test structure.
+- Sharing of tips, tricks, and useful learning resources.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+### What I Have Learned
 
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
-
-### Key Takeaways
-
-#### Design Mindset
-
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
-
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- **Enhanced Application Security Mindset:** Clearly understood how to apply autonomous AI-based technologies like AWS Security Agent to optimize the development lifecycle, from design reviews, code scanning, to automated penetration testing with optimal cost and efficiency.
+- **Comprehensive Monitoring Mindset from SLA:** Recognized the core difference between "healthy infrastructure" and "real-world user experience", thereby knowing how to set up alerting systems from the business and customer experience layers to react promptly before issues affect customers.
+- **International Certification Orientation:** Grasped the exam structure, review experiences, and useful materials to prepare for the journey of conquering the AWS Cloud Practitioner certification.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+This was an event that brought me a lot of practical knowledge and fresh perspectives, especially when listening to in-depth sharing from experienced seniors in the Cloud and DevSecOps industries.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Enthusiastic and Professional Atmosphere
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+The event took place in an extremely vibrant atmosphere, from the fierce competition of the teams in the Cloud Architect final round to in-depth technical knowledge-sharing sessions. Everything was prepared and operated very smoothly thanks to the dedication of the organizing committee and the FCAJ mentor team.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Absorbing Practical Knowledge
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+The topics presented did not stop at textbook theory but also incorporated many hard-earned lessons from real-world enterprise practices. Being exposed to advanced technologies like **AI Security Agents** and truly understanding the nature of **SLA and Monitoring** helped me realize many things and more clearly define the path for developing my skills in the future.
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+#### Connection and Horizon Broadening
 
-#### Some event photos
-*Add your event photos here*  
+The event continued to be a wonderful bridge for me to network and learn together with a community of technology enthusiasts. Advice on learning paths, working experience, and the direction to conquer international certifications like **AWS Cloud Practitioner** truly served as a huge source of motivation for a newcomer like me.
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+#### Event Photos
+
+![Event 3](/images/4-EventParticipated/event-3.jpg)
+![Event 4](/images/4-EventParticipated/event-4.jpeg)
