@@ -15,7 +15,7 @@ Link các bài viết đã đăng trên [AWS Study Group](https://www.facebook.c
 
 ###  [BLOG 1 - AMAZON ATHENA - PHÂN TÍCH DỮ LIỆU TRÊN S3 BẰNG SQL MÀ KHÔNG CẦN TẠO DATABASE](3.1-Blog1/)
 
-Blog này giới thiệu về Amazon Athena, một dịch vụ serverless cho phép truy vấn trực tiếp dữ liệu (như CSV, JSON, Parquet, ORC, Avro) được lưu trữ trên Amazon S3 bằng cú pháp SQL quen thuộc. Nêu các bước cụ thể để tạo bảng tham chiếu và phân tích dữ liệu mà không cần phải cài đặt hay quản trị bất kỳ máy chủ cơ sở dữ liệu nào, đồng thời chỉ ra những ưu điểm cũng như các lưu ý quan trọng để tối ưu chi phí khi truy .
+Blog này giới thiệu về Amazon Athena, một dịch vụ serverless cho phép truy vấn trực tiếp dữ liệu (như CSV, JSON, Parquet, ORC, Avro) được lưu trữ trên Amazon S3 bằng cú pháp SQL quen thuộc. Nêu các bước cụ thể để tạo bảng tham chiếu và phân tích dữ liệu mà không cần phải cài đặt hay quản trị bất kỳ máy chủ cơ sở dữ liệu nào, đồng thời chỉ ra những ưu điểm cũng như các lưu ý quan trọng để tối ưu chi phí khi truy vấn.
 
 ###  [BLOG 2 - AWS FAULT INJECTION SERVICE – CHỦ ĐỘNG TẠO LỖI ĐỂ KIỂM TRA ĐỘ ỔN ĐỊNH CỦA HỆ THỐNG](3.2-Blog2/)
 
