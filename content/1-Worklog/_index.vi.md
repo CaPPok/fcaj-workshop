@@ -8,7 +8,7 @@ pre: " <b> 1. </b> "
 
 Worklog được thực hiện trong suốt thời gian thực tập với nội dung các tuần như sau:
 
-**Tuần 1:** [Làm quen với AWS và các dịch vụ cơ bản trong AWS](1.1-week1/)
+**Tuần 1:** [Làm quen với AWS và tìm hiểu các dịch vụ cơ bản](1.1-week1/)
 
 **Tuần 2:** [Làm công việc A...](1.2-week2/)
 
