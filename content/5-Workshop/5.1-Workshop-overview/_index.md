@@ -1,18 +1,84 @@
 ---
-title : "Introduction"
-date : 2024-01-01 
-weight : 1 
-chapter : false
-pre : " <b> 5.1. </b> "
+title: "Overall Architecture and Workflow"
+date: 2026-07-30
+weight: 1
+chapter: false
+pre: " <b> 5.1. </b> "
 ---
 
-#### VPC endpoints
-+ **VPC endpoints** are virtual devices. They are horizontally scaled, redundant, and highly available VPC components. They allow communication between your compute resources and AWS services without imposing availability risks.
-+ Compute resources running in VPC can access  **Amazon S3**  using a Gateway endpoint. PrivateLink interface endpoints can be used by compute resources running in VPC or on-premises.
+The system consists of a **React/Vite** frontend, a **FastAPI** backend, five DynamoDB tables, an S3 bucket for storing datasets and artifacts, recommendation providers, and two options for executing model retraining: locally/on EC2 or via SageMaker Processing Jobs.
 
-#### Workshop overview
-In this workshop, you will use two VPCs. 
-+ **"VPC Cloud"** is for cloud resources such as a  **Gateway endpoint** and an EC2 instance to test with. 
-+ **"VPC On-Prem"** simulates an on-premises environment such as a factory or corporate datacenter. An EC2 instance running strongSwan VPN software has been deployed in "VPC On-prem" and automatically configured to establish a Site-to-Site VPN tunnel with AWS Transit Gateway. This VPN simulates connectivity from an on-premises location to the AWS cloud. To minimize costs, only one VPN instance is provisioned to support this workshop. When planning VPN connectivity for your production workloads, AWS recommends using multiple VPN devices for high availability.
+## Overall Architecture
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+{{< mermaid align="center" >}}
+flowchart LR
+    Browser[Browser] --> Frontend[React Frontend]
+    Frontend --> API[FastAPI Backend]
+    API --> DDB[(DynamoDB)]
+    API --> Cache[(RecommendationCache)]
+    API --> Endpoint[SageMaker Runtime]
+    DDB --> Exporter[Interaction Exporter]
+    Exporter --> S3[(Amazon S3)]
+    S3 --> Processing[SageMaker Processing Job]
+    Processing --> S3
+{{< /mermaid >}}
+
+<!-- IMAGE-5.1-01: Mermaid diagram can be replaced with a verified architecture diagram. -->
+
+## Application Request Workflows
+
+1. The browser invokes centralized services in the frontend.
+2. `apiClient` attaches base URL, JSON headers, and JWT tokens for authenticated endpoints.
+3. The FastAPI router authenticates the request and invokes the corresponding service.
+4. The service applies business rules and calls repositories or the `RecommendationProvider`.
+5. Repositories perform DynamoDB operations; providers invoke SageMaker Runtime.
+6. `movie_id` references are enriched with metadata from the `Movies` table before being returned to the frontend.
+
+### Guest Workflow
+
+The guest workflow only reads from `PopularMovies`, then uses `BatchGetItem` to fetch movie metadata from `Movies`. This path does not invoke SageMaker.
+
+### Personalized Recommendation Workflow
+
+The backend checks `RecommendationCache` first. If a valid cache entry exists, results are returned directly without calling the endpoint. On a cache miss, the backend constructs the request context, calls SageMaker Runtime, validates the response, writes to cache on a best-effort basis, and enriches results with movie metadata.
+
+![Recommendation request flow through cache and SageMaker endpoint](/images/5-Workshop/5.1-Workshop-overview/backend-request-flow.jpg)
+
+*Recommendation request flow: check the cache, invoke SageMaker on a cache miss, and retrieve metadata from the Movies table.*
+
+## Retraining Workflow
+
+1. Kaggle CSV files are profiled, cleaned, and MovieLens IDs are mapped to TMDB movie IDs.
+2. The pipeline creates content features, interaction matrices, and temporal dataset splits.
+3. The ALS model is trained and evaluated offline.
+4. The promotion gate evaluates metrics and decides whether to update the `LATEST.json` pointer.
+5. Model artifacts and evaluation reports are synchronized to S3.
+6. Operational user interactions can be exported from DynamoDB to S3 for subsequent retraining runs.
+
+## Service Roles Matrix
+
+| Component | Role |
+|---|---|
+| Amazon S3 | Persistent storage for datasets, model artifacts, and evaluation reports |
+| Amazon DynamoDB | Request-time storage for movie metadata, user accounts, interactions, and recommendation cache |
+| SageMaker Processing Job | Executes batch model retraining jobs |
+| SageMaker Runtime | Target endpoint invoked by backend recommendation providers |
+| Amazon EC2 | Hosts web application containers and can optionally run scheduled retraining via systemd |
+| AWS IAM | Enforces permission isolation for deployment, web runtime, and SageMaker execution |
+
+## Unimplemented Boundaries
+
+{{% notice warning %}}
+The repository currently lacks a serving handler or packaging script to deploy `RecommendationEngine` directly as a SageMaker endpoint. While the local recommendation engine and backend endpoint client interface can be tested independently, a new real-time endpoint cannot be provisioned solely from the current codebase.
+{{% /notice %}}
+
+The training path and request-time path form a closed deployment loop only after providing a serving handler, model bundle, and scripts to provision SageMaker Model, EndpointConfig, and Endpoint resources.
+
+## Knowledge Check
+
+- The guest path does not interact with SageMaker.
+- The model returns only movie references, scores, and reason codes; metadata is resolved from the `Movies` table.
+- A SageMaker Processing Job is distinct from a real-time endpoint deployment.
+- The Interaction API records user behavior and does not directly trigger recommendations.
+
+**Reference Sources:** `README.md`, `backend/app/container.py`, `backend/app/services/recommendation_service.py`, `backend/app/services/sagemaker_recommendation_provider.py`, and ML submodule at pinned commit.

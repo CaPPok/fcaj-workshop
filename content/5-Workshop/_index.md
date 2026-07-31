@@ -1,31 +1,66 @@
 ---
-title: "Workshop"
-date: 2024-01-01
+title: Workshop
+date: 2026-07-30
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
+
+This workshop presents the architecture and operational workflow of a movie recommendation system built with **React**, **FastAPI**, and AWS services. The system utilizes:
+
+![Streamverse movie recommendation system home page](/images/5-Workshop/ui-home-page.png)
+
+*The main interface of the movie streaming and recommendation application.*
+
+- **Amazon DynamoDB** to store movie details, user accounts, user interaction history, and recommendation cache.
+- **Amazon S3** to store raw data, processed data, training sets, model artifacts, and evaluation reports.
+- **Amazon SageMaker Processing Job** to execute on-demand retraining pipelines.
+- **Amazon SageMaker Runtime** as the real-time inference target for the backend.
+- **Amazon EC2** to host and run the application via Docker Compose.
+- **AWS IAM** to segregate permissions among deployer, application, and SageMaker execution roles.
+
+## Problem Statement
+
+The system addresses three main user scenarios:
+
+1. **Unauthenticated Guests**: Browse popular movie lists.
+2. **New Users**: Select preferred genres during the onboarding workflow.
+3. **Returning Users**: Receive personalized recommendations based on interaction history, cache, and recommendation providers.
+
+## Confirmed Scope
+
+- DynamoDB has five logical tables: `Movies`, `PopularMovies`, `Users`, `UserInteractions`, and `RecommendationCache`.
+- S3 is partitioned into logical zones for raw data, processed data, training sets, inference lookup, model artifacts, evaluation reports, and interaction exports.
+- The ML pipeline uses **implicit ALS** for collaborative filtering, featuring offline evaluation and a promotion gate.
+- The backend contains code to invoke a SageMaker real-time endpoint.
+- GitHub Actions deploys the application to an existing EC2 server.
+- The application code utilizes the default AWS SDK credential provider chain.
+
 {{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+The repository currently does not include Infrastructure as Code (IaC), DynamoDB data loading scripts, SageMaker serving handlers, model/EndpointConfig/Endpoint creation scripts, complete IAM configurations, EC2 provisioning workflows, or cleanup automation. Therefore, the workshop accurately describes existing components and highlights required manual steps.
 {{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+## Learning Outcomes
 
-#### Overview
+Upon completing this workshop, you will be able to:
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+- Explain the data flow, training flow, and request-time inference flow.
+- Inspect the schema of the five DynamoDB tables and S3 prefix structures.
+- Execute data pipelines, validation, and dry-runs for model retraining.
+- Train and evaluate models locally, or launch SageMaker Processing Jobs given proper IAM permissions.
+- Launch the application and test guest, authentication, and interaction flows.
+- Diagnose cache hits, endpoint errors, and permission failures.
+- Formulate a resource cleanup plan adhering to strict dependency ordering.
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+## Workshop Table of Contents
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+1. [Overall Architecture and Workflow](5.1-Workshop-overview/)
+2. [Prerequisites](5.2-Prerequisites/)
+3. [Data Layer with S3 and DynamoDB](5.3-Data-layer/)
+4. [Recommendation Pipeline](5.4-Recommendation-pipeline/)
+5. [IAM and Security](5.5-IAM-security/)
+6. [Summary and Resource Cleanup](5.6-Cleanup/)
 
-#### Content
-
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+{{% notice note %}}
+Do not include real AWS credentials, JWT tokens, AWS Account IDs, actual ARNs, or real `.env` contents in the report or screenshots.
+{{% /notice %}}
