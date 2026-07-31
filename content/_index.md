@@ -1,6 +1,6 @@
 ---
 title: "Internship Report"
-date: 2024-01-01
+date: 2026-07-30
 weight: 1
 chapter: false
 ---
@@ -10,9 +10,9 @@ chapter: false
 ### Student Information:
 &emsp; **Full Name:** Banh Phu Hoi
 
-&emsp; **Phone Number:** 0989888999 
+&emsp; **Phone Number:** 0856293712
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** banhphuhoi@gmail.com
 
 &emsp; **University:** Ho Chi Minh City University of Technology - VNU-HCM
 
