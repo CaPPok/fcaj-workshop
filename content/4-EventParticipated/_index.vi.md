@@ -17,7 +17,7 @@ Trong quá trình thực tập, em đã tham gia 3 events. Mỗi event đều đ
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự 
 
-
+---
 
 ### [Event 2](4.2-Event2/)
 &emsp;**Tên sự kiện:** Event Day - 11/07/2026
@@ -28,7 +28,7 @@ Trong quá trình thực tập, em đã tham gia 3 events. Mỗi event đều đ
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự 
 
-
+---
 
 ### [Event 3](4.3-Event3/)
 &emsp;**Tên sự kiện:** FCAJ x Agentic AI Build Week Hackathon - 25/07/2026
