@@ -29,14 +29,6 @@ Repository không tạo EC2. Workflow GitHub Actions giả định một host đ
 3. Chỉ thêm các rule thực sự cần thiết theo bảng dưới đây.
 4. Chọn **Save rules** và kiểm tra lại từ một client được phép.
 
-| Mục đích | Type/Protocol | Port | Source khuyến nghị |
-|---|---|---:|---|
-| Quản trị Linux | SSH / TCP | 22 | `<ADMIN_PUBLIC_IP>/32`, VPN CIDR hoặc bastion security group; không dùng `0.0.0.0/0` |
-| Web không TLS | HTTP / TCP | 80 | `0.0.0.0/0` và `::/0` chỉ khi website cần public |
-| Web có TLS | HTTPS / TCP | 443 | `0.0.0.0/0` và `::/0` khi website cần public |
-| Application port trực tiếp | Custom TCP | `<APPLICATION_PORT>` | Security group của load balancer/reverse proxy hoặc CIDR kiểm thử được phê duyệt |
-| Backend nội bộ | Custom TCP | `<BACKEND_PORT>` | Không tạo public rule nếu frontend/reverse proxy chạy cùng host |
-
 ![Inbound rules của EC2 security group](/images/5-Workshop/5.4-Recommendation-pipeline/5.4.3-integrate-ec2-application/ec2-security-group-inbound-rules.png)
 
 *Security group `launch-wizard-1` có ba inbound TCP rules cho SSH port `22`, frontend port `5173` và backend port `8000`.*
@@ -133,12 +125,3 @@ Kết quả mong đợi:
 - Startup log không lộ credential.
 
 ![Swagger UI của Movie Recommendation API chạy trên EC2](/images/5-Workshop/5.4-Recommendation-pipeline/5.4.3-integrate-ec2-application/ec2-fastapi-swagger-ui.png)
-
-
-## 9. Phân biệt EC2 application và EC2 retraining
-
-`ml/deploy/ec2_bootstrap.sh` cấu hình một systemd timer cho retraining, không phải web deployment. Template này hiện cần sửa:
-
-- Subdirectory mặc định không trùng path submodule `ml`.
-- Event prefix `events/` không trùng cấu hình canonical `datasets/exports/`.
-
