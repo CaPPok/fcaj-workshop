@@ -12,17 +12,12 @@ Mục này tập hợp mã nguồn, bản demo, tài liệu AWS chính thức v�
 
 | Tài nguyên | Liên kết |
 |---|---|
-| Mã nguồn hệ thống gợi ý phim | [GitHub - movie-recommendation-system](https://github.com/CaPPok/movie-recommendation-system) |
-| Repository báo cáo và workshop | [GitHub - movie-project-report](https://github.com/tanghongai1704/movie-project-report) |
-| Website báo cáo | [GitHub Pages - movie-project-report](https://tanghongai1704.github.io/movie-project-report/) |
+| Mã nguồn hệ thống gợi ý phim | [GitHub - movie-project-report](https://github.com/tanghongai1704/movie-project-report) |
+| Mã nguồn hệ thống xử lý mô hình | [GitHub - movie-recommendation-system](https://github.com/CaPPok/movie-recommendation-system) |
 
 ## Demo
 
 - [Google Drive - Demo hệ thống gợi ý phim](https://drive.google.com/drive/folders/1TNqHmVXZxYamXQ_ZqLBBzCpeKkqFaSAn?usp=sharing)
-
-{{% notice note %}}
-Hãy bảo đảm người xem có quyền truy cập thư mục Google Drive trước khi công bố báo cáo. Không đưa access token, secret key, mật khẩu hoặc URL tạm thời có chữ ký vào tài liệu.
-{{% /notice %}}
 
 ## Tài liệu AWS chính thức
 
@@ -48,17 +43,3 @@ Hãy bảo đảm người xem có quyền truy cập thư mục Google Drive tr
 - [Các biện pháp bảo mật tốt nhất trong IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 - [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
 
-Các liên kết tài liệu AWS trên được kiểm tra lần cuối vào ngày **31/07/2026**.
-
-## Nguồn đối chiếu workshop
-
-| Đường dẫn trong repository mã nguồn | Mục đích đối chiếu |
-|---|---|
-| `backend/app/aws/infrastructure.py` | Định nghĩa cách backend truy cập tài nguyên AWS. |
-| `docs/aws/dynamodb.md` | Schema và access pattern của DynamoDB. |
-| `docs/aws/aws-setup.md` | Hướng dẫn cấu hình môi trường AWS. |
-| `configs/data_pipeline.yaml` | Cấu hình pipeline xử lý dữ liệu. |
-| `configs/model_serving.yaml` | Cấu hình model và cơ chế serving. |
-| `configs/aws.yaml` | Region, S3 prefix, SageMaker và promotion criteria. |
-| `scripts/sagemaker_retrain_job.py` | Khởi chạy hoặc dry-run SageMaker retraining job. |
-| `scripts/test_sagemaker_endpoint.py` | Mô tả và kiểm thử SageMaker Endpoint. |

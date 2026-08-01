@@ -12,17 +12,12 @@ This section collects the source code, demo, official AWS documentation, and rep
 
 | Resource | Link |
 |---|---|
-| Movie recommendation source code | [GitHub - movie-recommendation-system](https://github.com/CaPPok/movie-recommendation-system) |
-| Report and workshop repository | [GitHub - movie-project-report](https://github.com/tanghongai1704/movie-project-report) |
-| Published report website | [GitHub Pages - movie-project-report](https://tanghongai1704.github.io/movie-project-report/) |
+| Movie recommendation source code | [GitHub - movie-project-report](https://github.com/tanghongai1704/movie-project-report) |
+| Model processing system source code | [GitHub - movie-recommendation-system](https://github.com/CaPPok/movie-recommendation-system) |
 
 ## Demo
 
 - [Google Drive - Movie recommendation system demo](https://drive.google.com/drive/folders/1TNqHmVXZxYamXQ_ZqLBBzCpeKkqFaSAn?usp=sharing)
-
-{{% notice note %}}
-Make sure viewers can access the Google Drive folder before publishing the report. Never include access tokens, secret keys, passwords, or temporary signed URLs in this documentation.
-{{% /notice %}}
 
 ## Official AWS Documentation
 
@@ -47,18 +42,3 @@ Make sure viewers can access the Google Drive folder before publishing the repor
 
 - [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 - [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
-
-The AWS documentation links above were last verified on **July 31, 2026**.
-
-## Workshop Source Evidence
-
-| Source repository path | Evidence used in the workshop |
-|---|---|
-| `backend/app/aws/infrastructure.py` | Defines how the backend accesses AWS resources. |
-| `docs/aws/dynamodb.md` | Documents the DynamoDB schema and access patterns. |
-| `docs/aws/aws-setup.md` | Provides AWS environment configuration guidance. |
-| `configs/data_pipeline.yaml` | Configures the data processing pipeline. |
-| `configs/model_serving.yaml` | Configures the model and serving behavior. |
-| `configs/aws.yaml` | Defines the Region, S3 prefixes, SageMaker settings, and promotion criteria. |
-| `scripts/sagemaker_retrain_job.py` | Launches or dry-runs the SageMaker retraining job. |
-| `scripts/test_sagemaker_endpoint.py` | Describes and tests the SageMaker Endpoint. |
